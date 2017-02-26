@@ -13,3 +13,4 @@ fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)
 {-| should be in do block like in ghci
 fibs = 0 : 1 : [ x <- x zipWith (+) (tail fibs) fibs]
 -}
+fibs = 0 : 1 : zipWith (+) (tail fibs) fibs
