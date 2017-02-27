@@ -1,4 +1,4 @@
 # haskell-programming-from-first-principles
-# Hands on Haskell coding of book
+# Pure functional programming hands-on workshops using Haskell book
 
 [Haskell programming from first principles] (http://haskellbook.com/)
