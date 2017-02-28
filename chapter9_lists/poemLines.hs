@@ -15,12 +15,12 @@ sentences = firstSen ++ secondSen ++ thirdSen ++ fourthSen
 myLines :: String -> [String]
 myLines input = drop 1 $ reverse $ splitter input [[]]
 
-token = '\n'
+separator = '\n'
 firstWord :: [Char] -> [Char]
-firstWord xs = takeWhile (/=token) xs
+firstWord xs = takeWhile (/=separator) xs
 
 restOfSentence :: [Char] -> [Char]
-restOfSentence xs = dropWhile (==token) $ dropWhile (/=token) xs
+restOfSentence xs = dropWhile (==separator) $ dropWhile (/=separator) xs
 
 splitter :: String -> [String] -> [String]
 splitter [] acc = acc
