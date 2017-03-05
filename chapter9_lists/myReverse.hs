@@ -1,7 +1,6 @@
 module MyReverse where
 
 myReverse :: [a] -> [a]
-myReverse [] = []
 myReverse xs = foldl (\acc a -> a:acc) [] xs
 
 {-
